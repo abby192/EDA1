@@ -18,7 +18,7 @@ powerDT <- powerDT[(dateTime >= "2007-02-01") & (dateTime < "2007-02-03")]
 
 png("year3.png", width=480, height=480)
 
-# Plot 3
+# Year 3
 year(powerDT[, dateTime], powerDT[, Sub_metering_1], type="l", xlab="", ylab="Energy sub metering")
 lines(powerDT[, dateTime], powerDT[, Sub_metering_2],col="red")
 lines(powerDT[, dateTime], powerDT[, Sub_metering_3],col="blue")
